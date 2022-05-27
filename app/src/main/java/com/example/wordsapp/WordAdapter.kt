@@ -89,9 +89,11 @@ class WordAdapter(private val letterId: String, context: Context) :
         holder.button.setOnClickListener {
             //TODO 5. Crie uma variável intent do tipo Intent e a inicialize com
             // os parâmetros Intent.ACTION_VIEW e linkDeBusca
+            val intent = Intent(Intent.ACTION_VIEW, linkDeBusca)
 
-            //TODO 6. Chame a função startActivity do objeto contexo
+            //TODO 6. Chame a função startActivity do objeto contex
             // passando a Intent criada como parâmetro
+            context.startActivity(intent)
 
         }
     }

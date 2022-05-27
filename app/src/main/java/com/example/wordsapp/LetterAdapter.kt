@@ -77,8 +77,8 @@ class LetterAdapter :
 
             //TODO 2. Passe o valor da variável letraClicada a Intent criada
             val bundle = Bundle()
-            bundle.putString("StringComALetraClicada",letraClicada)
-            intent.putExtra("bundleComAStringContendoALetra", bundle)
+            bundle.putString("letraClicada",letraClicada)
+            intent.putExtra("bundleComLetra", bundle)
 
             //TODO 3. Chame a função startActivity do objeto contexo
             // passando a Intent criada como parâmetro
